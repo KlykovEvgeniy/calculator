@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="#">
+          <h1 class="header__logo">KlykovEvgeniy</h1>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-main">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="nav__list_skills">
+            <button class="js-skills" type="button">Skills</button>
+            <div class="js-skills-dropdown ">
+              <ul class="dropdowm-skills">
+                <li>React</li>
+                <li>tailwindcss</li>
+                <li>scss</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-menu js-hamburger">
+          <img src="./images/menu-hamburger.svg" alt="hamburger-menu">
+        </button>
+    </header>
+    <main class="main">
+        <section class="about container" id="about">
+          <img src="./images/man.webp" alt="Klykov Evgeniy Photo" role="img" loading="eager">
+          <div>
+            <h1>Klykov Evgeniy</h1>
+            <p>My name is Klykov Evgeniy Eduardovic. Im 13 years old Frontend React Developer. I'm currently studying a lot of interesting and new things about Frontend development in the COD project. </p>
+            <button type="button" class="button">More About Me</button>
+          </div>
+        </section>
+        <section class="progress container">
+            <div class="progress-bar">
+                <div class="progress-bar__inner">
+                  <p>42 points</p>
+                </div>
+              </div>
+        </section>
+        <section class="calc container">
+            <div class="calculator">
+                <input class="calc-input js-calc input" type="text" name="calc" />
+            <div class="calculator__btn">
+                <div class="calculator__numbers">
+                    <button class="control js-control" type="button">1</button>
+                    <button class="control js-control" type="button">2</button>
+                    <button class="control js-control" type="button">3</button>
+                    <button class="control js-control" type="button">4</button>
+                    <button class="control js-control" type="button">5</button>
+                    <button class="control js-control" type="button">6</button>
+                    <button class="control js-control" type="button">7</button>
+                    <button class="control js-control" type="button">8</button>
+                    <button class="control js-control" type="button">9</button>
+                </div>
+               <div class="calculator__controls">
+                    <button class="control js-control" type="button">+</button>
+                    <button class="control js-control" type="button">-</button>
+                    <button class="control js-control" type="button">/</button>
+                    <button class="control js-control" type="button">*</button>
+                    <button class="eq js-eq" type="button">=</button>
+                    <button class="clear js-clear" type="button">C</button>
+
+               </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer container">
+        <div class="footer__inner">
+          <a class="logo" href="#">
+            <h1 class="header__logo">KlykovEvgeniy</h1>
+          </a>
+          <ul class="footer__logo-list">
+            <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#ffffff" d="M16 .5C7.437.5.5 7.438.5 16S7.438 31.5 16 31.5c8.563 0 15.5-6.938 15.5-15.5S24.562.5 16 .5m7.613 10.619l-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856l-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944l7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587l-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z"/></svg>
+            </a></li>
+            <li><a href="#">
+              <svg id="Capa_1" width="32" fill="white" enable-background="new 0 0 97.75 97.75" viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg"><g><path d="m48.875 0c-26.992 0-48.875 21.882-48.875 48.875s21.883 48.875 48.875 48.875 48.875-21.882 48.875-48.875-21.883-48.875-48.875-48.875zm24.792 54.161c2.278 2.225 4.688 4.319 6.733 6.774.906 1.086 1.76 2.209 2.41 3.472.928 1.801.09 3.776-1.522 3.883l-10.013-.002c-2.586.214-4.644-.829-6.379-2.597-1.385-1.409-2.67-2.914-4.004-4.371-.545-.598-1.119-1.161-1.803-1.604-1.365-.888-2.551-.616-3.333.81-.797 1.451-.979 3.059-1.055 4.674-.109 2.361-.821 2.978-3.19 3.089-5.062.237-9.865-.531-14.329-3.083-3.938-2.251-6.986-5.428-9.642-9.025-5.172-7.012-9.133-14.708-12.692-22.625-.801-1.783-.215-2.737 1.752-2.774 3.268-.063 6.536-.055 9.804-.003 1.33.021 2.21.782 2.721 2.037 1.766 4.345 3.931 8.479 6.644 12.313.723 1.021 1.461 2.039 2.512 2.76 1.16.796 2.044.533 2.591-.762.35-.823.501-1.703.577-2.585.26-3.021.291-6.041-.159-9.05-.28-1.883-1.339-3.099-3.216-3.455-.956-.181-.816-.535-.351-1.081.807-.944 1.563-1.528 3.074-1.528l11.313-.002c1.783.35 2.183 1.15 2.425 2.946l.01 12.572c-.021.695.349 2.755 1.597 3.21 1 .33 1.66-.472 2.258-1.105 2.713-2.879 4.646-6.277 6.377-9.794.764-1.551 1.423-3.156 2.063-4.764.476-1.189 1.216-1.774 2.558-1.754l10.894.013c.321 0 .647.003.965.058 1.836.314 2.339 1.104 1.771 2.895-.894 2.814-2.631 5.158-4.329 7.508-1.82 2.516-3.761 4.944-5.563 7.471-1.656 2.31-1.525 3.473.531 5.479z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>
+            </a></li>
+            <li><a href="#">
+              <svg version="1.1" fill="white" width="32" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60.734 60.733" style="enable-background:new 0 0 60.734 60.733;" xml:space="preserve"><g><path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914 v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462 v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"/></g></svg>
+            </a></li>
+          </ul>
+        </div>
+        <p class="footer__bottom">&copy; 2025 KlykovEvgeniy. All rights reserved.</p>
+      </footer>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
